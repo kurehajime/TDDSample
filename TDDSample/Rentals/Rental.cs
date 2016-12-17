@@ -10,5 +10,10 @@
             Movie = movie;
             DaysRented = daysRented;
         }
+
+        public  int CalcFee()
+        {
+            return Movie.CalcFee(this.DaysRented);
+        }
     }
 }
